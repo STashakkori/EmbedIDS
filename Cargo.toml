@@ -1,0 +1,18 @@
+[package]
+name = "embedIDS"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+pnet = "3.25.0"
+rumqttc = "0.10.0"
+tokio = { version = "1", features = ["full"] }
+
+[dependencies.rumqttc]
+default-features = false
+
+[dependencies.pnet]
+default-features = false
+
+[dependencies.pnet_macros_support]
+default-features = false
